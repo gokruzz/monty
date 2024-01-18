@@ -3,11 +3,12 @@
 * execute - executes the opcode
 * @stack: head linked list - stack
 * @line_number: counter
-* @file: poiner to monty file
+* @file: pointer to monty file
 * @content: line content
 * Return: no return
 */
-int execute(char *content, stack_t **stack, unsigned int line_number, FILE *file)
+int execute(char *content, stack_t **stack, unsigned int line_number,
+		FILE *file)
 {
 	instruction_t opst[] = {
 				{"push", f_push}, {"pall", f_pall}, {"pint", f_pint},
